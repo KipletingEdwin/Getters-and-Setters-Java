@@ -4,21 +4,38 @@ public class Account {
 
     public  static  void main(String[] args){
         Account a = new Account();
-        a.setName("John");
-        a.setAge(24);
+        a.setName("Edwin");
+        a.setAge(29);
+        System.out.println(a.getAge());
+        System.out.println(a.getName());
 
         a.printDetails();
     }
 
-    public  void  setName(String name){
+    //GETTERS
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    //SETTERS
+
+    public void setName(String name) {
         this.name = name;
     }
 
-    public  void setAge(int age){
+    public void setAge(int age) {
         this.age = age;
     }
 
+
+
+
     public  void  printDetails(){
-        System.out.println(name + ", " + age);
+        System.out.println(getName() + ", " + getAge());
     }
 }
